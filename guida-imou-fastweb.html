@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Configurazione Telecamera IMOU 4G con SIM Fastweb</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.6em;
+            color: #fff;
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            padding: 30px 20px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+        }
+        h1 small {
+            display: block;
+            font-weight: 400;
+            font-size: 0.55em;
+            margin-top: 8px;
+            opacity: 0.85;
+        }
+        .step {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 5px solid #1a73e8;
+        }
+        .step h2 {
+            font-size: 1.15em;
+            color: #1a73e8;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .step-number {
+            background: #1a73e8;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85em;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .step ol, .step ul {
+            padding-left: 22px;
+        }
+        .step li {
+            margin-bottom: 8px;
+        }
+        .step li:last-child {
+            margin-bottom: 0;
+        }
+        .substep {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 2px;
+        }
+        .apn-box {
+            background: #e8f0fe;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-top: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+        .apn-box span {
+            color: #888;
+        }
+        .warning {
+            background: #fff3e0;
+            border-left: 5px solid #ff9800;
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .warning h2 {
+            color: #e65100;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .warning ul {
+            padding-left: 22px;
+        }
+        .warning li {
+            margin-bottom: 6px;
+        }
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.8em;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            📷 Configurazione Telecamera IMOU 4G
+            <small>con SIM Fastweb — Guida passo passo</small>
+        </h1>
+
+        <div class="step">
+            <h2><span class="step-number">1</span> Prepara la SIM sul telefono</h2>
+            <ol>
+                <li>Inserisci la SIM Fastweb in uno smartphone.</li>
+                <li>
+                    <strong>Disattiva il PIN della SIM:</strong>
+                    <ul class="substep">
+                        <li><strong>Android:</strong> Impostazioni → Sicurezza → Blocco SIM → Disattiva</li>
+                        <li><strong>iPhone:</strong> Impostazioni → Dati cellulare → PIN SIM → Disattiva</li>
+                    </ul>
+                </li>
+                <li>Riavvia il telefono e verifica che <strong>non chieda più il PIN</strong> all'accensione.</li>
+                <li>Disattiva il Wi-Fi e controlla che navighi in 4G aprendo una pagina web qualsiasi.</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">2</span> Inserisci la SIM nella telecamera</h2>
+            <ol>
+                <li><strong>Spegni la telecamera</strong> (stacca l'alimentazione).</li>
+                <li>Inserisci la SIM nello slot rispettando il verso indicato, fino al <em>click</em>.</li>
+                <li>Ricollega l'alimentazione.</li>
+                <li>Attendi <strong>2 minuti</strong> che il modem interno si avvii e agganci la rete.</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">3</span> Resetta la telecamera</h2>
+            <ol>
+                <li>Con la telecamera accesa, tieni premuto il tasto <strong>Reset</strong> per <strong>10–15 secondi</strong>.</li>
+                <li>Attendi il messaggio vocale o il segnale acustico di conferma.</li>
+                <li>Aspetta il riavvio completo della telecamera.</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2><span class="step-number">4</span> Configura su Imou Life</h2>
+            <ol>
+                <li>Apri l'app <strong>Imou Life</strong>.</li>
+                <li>Premi <strong>"+"</strong> in alto a destra.</li>
+                <li>Scansiona il <strong>QR code</strong> presente sulla telecamera o sulla scatola.</li>
+                <li>Segui le istruzioni a schermo.</li>
+                <li>
+                    Se l'app chiede di impostare l'APN, inserisci:
+                    <div class="apn-box">
+                        APN: <strong>apn.fastweb.it</strong><br>
+                        Utente: <span>(vuoto)</span><br>
+                        Password: <span>(vuoto)</span>
+                    </div>
+                </li>
+                <li>Attendi il completamento al <strong>100%</strong>.</li>
+            </ol>
+        </div>
+
+        <div class="warning">
+            <h2>⚠️ Se si blocca ancora al 75%</h2>
+            <ul>
+                <li>Controlla che la telecamera sia in un punto con <strong>buon segnale 4G</strong>.</li>
+                <li>Prova a <strong>rimuovere e reinserire la SIM</strong> a telecamera spenta.</li>
+                <li>Verifica su MyFastweb che la SIM abbia <strong>Giga disponibili</strong> e sia attiva per il traffico dati.</li>
+                <li>Controlla che il formato della SIM (micro/nano) sia quello giusto e che non balli nello slot.</li>
+            </ul>
+        </div>
+
+        <footer>
+            Guida non ufficiale — Non affiliata a IMOU o Fastweb
+        </footer>
+    </div>
+</body>
+</html>
